@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,28 +13,27 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HW_2_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.20000000000000001" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="inD-ql-gi4">
-                                <rect key="frame" x="95" y="50" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="inD-ql-gi4">
+                                <rect key="frame" x="95" y="47.000000000000014" width="224" height="216.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
-                            <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Gs-Lz-wMY">
-                                <rect key="frame" x="95" y="270" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Gs-Lz-wMY">
+                                <rect key="frame" x="95" y="283.33333333333331" width="224" height="216.33333333333331"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
-                            <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LXx-iQ-BYR">
-                                <rect key="frame" x="95" y="490" width="200" height="200"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LXx-iQ-BYR">
+                                <rect key="frame" x="95" y="519.66666666666663" width="224" height="216.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCz-pd-KKP">
-                                <rect key="frame" x="158" y="743" width="75" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCz-pd-KKP">
+                                <rect key="frame" x="149.66666666666666" y="789" width="114.99999999999997" height="41"/>
                                 <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="115" id="A84-40-z2X"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="START"/>
@@ -45,6 +44,22 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LXx-iQ-BYR" firstAttribute="height" secondItem="0Gs-Lz-wMY" secondAttribute="height" id="8a4-Eo-0CJ"/>
+                            <constraint firstItem="inD-ql-gi4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="D9d-kL-3Au"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DCz-pd-KKP" secondAttribute="bottom" constant="32" id="GXm-BV-Qmw"/>
+                            <constraint firstItem="0Gs-Lz-wMY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="HAC-18-J47"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LXx-iQ-BYR" secondAttribute="trailing" constant="95" id="IJG-1P-khh"/>
+                            <constraint firstItem="0Gs-Lz-wMY" firstAttribute="top" secondItem="inD-ql-gi4" secondAttribute="bottom" constant="20" id="Ip9-FJ-6uH"/>
+                            <constraint firstItem="DCz-pd-KKP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NCt-ri-Ff6"/>
+                            <constraint firstItem="DCz-pd-KKP" firstAttribute="top" secondItem="LXx-iQ-BYR" secondAttribute="bottom" constant="53" id="NsF-4x-icR"/>
+                            <constraint firstItem="inD-ql-gi4" firstAttribute="height" secondItem="0Gs-Lz-wMY" secondAttribute="height" id="Qvp-yD-2DN"/>
+                            <constraint firstItem="LXx-iQ-BYR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="T5X-hL-YiK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="inD-ql-gi4" secondAttribute="trailing" constant="95" id="U6Z-Me-MZ4"/>
+                            <constraint firstItem="inD-ql-gi4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="3" id="vGb-D5-OHT"/>
+                            <constraint firstItem="LXx-iQ-BYR" firstAttribute="top" secondItem="0Gs-Lz-wMY" secondAttribute="bottom" constant="20" id="voE-rN-bCv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Gs-Lz-wMY" secondAttribute="trailing" constant="95" id="xKJ-sY-s2h"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="greenView" destination="LXx-iQ-BYR" id="Gvh-uj-prL"/>

@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         yellowView.layer.cornerRadius = 100
         greenView.layer.cornerRadius = 100
         switchButton.layer.cornerRadius = 10
-        
     }
 
     @IBAction func switchColor(_ sender: Any) {
